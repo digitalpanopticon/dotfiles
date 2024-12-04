@@ -6,3 +6,7 @@ apt install stow fzf
 stow tmux
 stow zsh
 ```
+## Tmux
+```bash
+git clone https://github.com/tmux-plugins/tmux-logging /opt/tmux-logging/
+```
