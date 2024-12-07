@@ -259,7 +259,9 @@ fi
 
 
 # fzf
-source /usr/share/doc/fzf/examples/key-bindings.zsh
+if [[ "$(uname -s)" == *"Linux"* ]]; then
+  source /usr/share/doc/fzf/examples/key-bindings.zsh
+fi
 
 #set history size
 export HISTSIZE=10000
