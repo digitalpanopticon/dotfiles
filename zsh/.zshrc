@@ -257,6 +257,19 @@ if [ -f /etc/zsh_command_not_found ]; then
     . /etc/zsh_command_not_found
 fi
 
+##################
+#                #
+#     CUSTOM     #
+#                #
+##################
+
+alias weather="curl 'https://wttr.in/97074?0Q'"
+alias wetter="curl 'https://wttr.in/97074?0Q'"
+
+# start tmux
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+          exec tmux
+fi
 
 # fzf
 if [[ "$(uname -s)" == *"Linux"* ]]; then
