@@ -9,4 +9,5 @@ stow zsh
 ## Tmux
 ```bash
 git clone https://github.com/tmux-plugins/tmux-logging /opt/tmux-logging/
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
