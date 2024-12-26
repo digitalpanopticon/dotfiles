@@ -272,12 +272,7 @@ if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] &&
 fi
 
 # fzf
-if [[ "$(uname -s)" == *"Linux"* ]]; then
-  source /usr/share/doc/fzf/examples/key-bindings.zsh # try the darwin command on debian to check if it works, then i can simplify
-fi
-if [[ "$(uname -s)" == *"Darwin"* ]]; then
-  source <(fzf --zsh)
-fi
+source <(fzf --zsh)
 
 #set history size
 export HISTSIZE=10000
