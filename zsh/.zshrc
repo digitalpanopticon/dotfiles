@@ -267,9 +267,9 @@ alias weather="curl 'https://wttr.in/97074?0Q'"
 alias wetter="curl 'https://wttr.in/97074?0Q'"
 
 # start tmux
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-          exec tmux
-fi
+#if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+#          exec tmux
+#fi
 
 # fzf
 source <(fzf --zsh)
