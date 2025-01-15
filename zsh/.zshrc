@@ -272,7 +272,11 @@ alias wetter="curl 'https://wttr.in/97074?0Q'"
 #fi
 
 # fzf
-source <(fzf --zsh)
+if [[ "$(cat /etc/os-release)" == *"Debian GNU/Linux 12 (bookworm)"* ]]; then 
+	source /usr/share/doc/fzf/examples/key-bindings.zsh
+else
+	source <(fzf --zsh) # only this needed on all versions above 0.48.0 but debian 12s packages are too old lol
+fi
 
 #set history size
 export HISTSIZE=10000
