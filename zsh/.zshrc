@@ -265,6 +265,7 @@ fi
 
 alias weather="curl 'https://wttr.in/97074?0Q'"
 alias wetter="curl 'https://wttr.in/97074?0Q'"
+alias helix=hx
 
 # start tmux
 #if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
@@ -289,3 +290,6 @@ setopt HIST_IGNORE_DUPS
 #add timestamp for each entry
 setopt EXTENDED_HISTORY
 export PATH=$HOME/.local/bin:$PATH
+
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
