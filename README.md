@@ -2,19 +2,13 @@
 https://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html
 
 ```bash
-brew install stow fzf
-apt install stow fzf
-stow tmux
+# brew install stow fzf
+sudo apt install stow fzf cargo kitty
 stow zsh
-```
-## Tmux
-```bash
-git clone https://github.com/tmux-plugins/tmux-logging /opt/tmux-logging/
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+stow kitty
 ```
 
 ```
- _   _             _       _   _             ___   _                     _
 ( ) ( )           ( )     ( )_( )           (  _ \(_ )                  ( )_
 | |_| |  _ _   ___| |/ )  |  _) |__    __   | |_) )| |   _ _  ___    __ |  _)
 |  _  |/ _  )/ ___)   (   | | |  _  \/ __ \ |  __/ | | / _  )  _  \/ __ \ |

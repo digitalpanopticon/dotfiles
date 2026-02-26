@@ -265,15 +265,9 @@ fi
 
 alias weather="curl 'https://wttr.in/97074?0Q'"
 alias wetter="curl 'https://wttr.in/97074?0Q'"
-alias helix=hx
-
-# start tmux
-#if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-#          exec tmux
-#fi
 
 # fzf
-if [[ "$(cat /etc/os-release)" == *"Debian GNU/Linux 12 (bookworm)"* ]]; then 
+if [[ "$(cat /etc/os-release)" == *"Debian GNU/Linux 12"* ]] || [[ "$(cat /etc/os-release)" == *"Linux Mint"* ]]; then 
 	source /usr/share/doc/fzf/examples/key-bindings.zsh
 else
 	source <(fzf --zsh) # only this needed on all versions above 0.48.0 but debian 12s packages are too old lol
