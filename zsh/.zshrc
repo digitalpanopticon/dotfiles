@@ -294,6 +294,7 @@ setopt HIST_IGNORE_DUPS
 #add timestamp for each entry
 setopt EXTENDED_HISTORY
 export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.cargo/bin:$PATH
 
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
